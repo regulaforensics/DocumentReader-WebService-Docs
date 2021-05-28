@@ -35,7 +35,7 @@ docker run -d -p 8080:8080 -v C:\%HOMEPATH%\Desktop\regula.license:/app/extBin/u
 
 3. Enter the following address in a web browser: [http://localhost:8080/](http://localhost:8080/) to verify service is up and running
 
-## 
+
 
 All required information regarding deploying containerized Document Reader Web API can be found on our official Docker Hub repository page.
 

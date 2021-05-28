@@ -8,9 +8,9 @@
 * **DOCREADER\_BACKLOG**: the maximum number of requests in a queue, default **20**
 * **DOCREADER\_WORKERS**: the number of workers to process requests, default **1**
 * **DOCREADER\_LOG\_LEVEL**: the granularity of Error log outputs, default **info**, possible options **debug, info, warning, error, critical**
-* **DOCREADER\_LOG\_FILE**: the absolute path to Error log file to write to, default **-** \(log to stderr\)
-* **DOCREADER\_ACCESS\_LOG\_FILE**: the absolute path to Access log file to write to, default **-** \(log to stdout\)
-* **DOCREADER\_LIC\_URL**: the URL to regula.license file for further download, if the mount option is not available, default **None** \(low priority over mounted file\)
+* **DOCREADER\_LOG\_FILE**: the absolute path to an error log file to write to, default **-** \(log to stderr\)
+* **DOCREADER\_ACCESS\_LOG\_FILE**: the absolute path to an access log file to write to, default **-** \(log to stdout\)
+* **DOCREADER\_LIC\_URL**: the URL to regula.license file for further download, if the mount option is not available, default **None** \(low priority over a mounted file\)
 * **DOCREADER\_ENABLE\_DEMO\_WEB\_APP**: enable demo site, default **true**
 
 #### HTTPS
@@ -42,7 +42,7 @@ Run Nginx as a frontend container for HTTPS processing and proxy service request
 
 #### Option 2. Docreader via HTTPS
 
-To run the docreader service via https:
+To run the docreader service via HTTPS:
 
 * add 644 permissions to certificates so the server is able to read certificates
 * pass cert.crt & cert.key files to the container

@@ -26,5 +26,5 @@
 
 #### Added
 
-* optional configuration parameter &lt;SdkMaxProcessingTime&gt; , which allows to override 10 second transaction processing timeout
+* optional configuration parameter &lt;SdkMaxProcessingTime&gt;, which allows to override 10 second transaction processing timeout
 

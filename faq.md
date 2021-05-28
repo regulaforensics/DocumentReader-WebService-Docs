@@ -49,7 +49,7 @@ docker run -it -p 8443:8080 -v ~/regula.license:/app/extBin/unix_x64/regula.lice
 
 ## How to recognize multi-page documents
 
-You should submit both document pages within a single transaction as in the example below. Please, mark every separate page image with a different page index value. The transaction will be processed as usual. When the results are ready, the XML or JSON structure will contain a list with the results in accordance witn the requested result type \(for each page\).
+You should submit both document pages within a single transaction as in the example below. Please, mark every separate page image with a different page index value. The transaction will be processed as usual. When the results are ready, the XML or JSON structure will contain a list with the results in accordance with the requested result type \(for each page\).
 
 ```text
 [ 
@@ -69,6 +69,8 @@ You should submit both document pages within a single transaction as in the exam
 ## Where can I find logs?
 
 ## Is there a sample client available?
+
+Please find  available clints [here](https://github.com/regulaforensics/DocumentReader-web-openapi#clients) 
 
 ## Why do I get a 'null' or "Result of this type is not available" response?
 
