@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Getting Started with Web API](README.md)
+* [Introduction](README.md)
 * [Troubleshoot](troubleshoot.md)
 * [Changelog](changelog.md)
 * [Installation](installation/README.md)
