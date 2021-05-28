@@ -12,7 +12,6 @@ To install Document Reader Web API you need, a 64-bit version of one of these su
 
 **Debian**
 
-* Debian 8 \(Jessie\)
 * Debian 9 \(Stretch\)
 * Debian 10 \(Buster\)
 
