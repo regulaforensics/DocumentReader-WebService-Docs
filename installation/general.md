@@ -19,6 +19,29 @@ For **transaction-based** licenses number of workers is not limited,
 only amount of **process requests**  counts.
 {% endhint %}
 
+## Proxy Guard
+
+**Regula Document Reader** is **not** general HTTP webserver, that handles hundreds of request per second.
+Typical document processing takes up to a few seconds, so we can call it CPU intensive.
+Considering that typical instance has 1-4 workers, we need to carefully manage workers time. 
+One of the main sources of **waisting** worker's processing time is **slow clients** problem.
+When webservice receives request from client with a **slow** internet connection,  
+free worker start receiving that request. 
+The worker will be bottlenecked by the speed of the client connection, 
+and it will be blocked **until** the slow client finishes sending large ID image.
+Being blocked means that this worker process can not handle any other request in the meantime, 
+it’s just there, **idle**, waiting to receive the entire request, so it can start really processing it.
+
+We strongly recommend using **Regula Document Reader** behind a proxy server.
+Although there are many HTTP proxies available, we strongly advise that you use Nginx. 
+If you choose another proxy server, you need to make sure that it buffers slow clients.
+
+{% hint style="danger" %}
+Typical Load Balancers from cloud provides, such as ELB/ALB from aws, 
+do **not** buffer slow clients. 
+So you **still need** to use some **proxy** server between LB and **Regula Document Reader**.
+{% endhint %}
+
 ## Prerequisites
 
 Recommended machine settings: 1CPU and 2Gb RAM per worker.
