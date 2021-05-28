@@ -2,15 +2,15 @@
 
 * [Introduction](README.md)
 
-## Installation <a id="installation-1"></a>
+## Installation
 
-* [General Concerns](installation-1/requirements.md)
-* [Platforms](installation-1/platforms/README.md)
-  * [Docker](installation-1/platforms/docker.md)
-  * [Linux](installation-1/platforms/linux.md)
-  * [Windows](installation-1/platforms/windows.md)
-* [Settings](installation-1/custom-settings.md)
-* [Deployment](installation-1/deployment.md)
+* [General Concerns](installation/requirements.md)
+* [Platforms](installation/platforms/README.md)
+  * [Docker](installation/platforms/docker.md)
+  * [Linux](installation/platforms/linux.md)
+  * [Windows](installation/platforms/windows.md)
+* [Settings](installation/custom-settings.md)
+* [Deployment](installation/deployment.md)
 
 ## Integration
 
