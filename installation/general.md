@@ -25,8 +25,7 @@ only amount of **process requests**  counts.
 Typical document processing takes up to a few seconds, so we can call it CPU intensive.
 Considering that typical instance has 1-4 workers, we need to carefully manage workers time. 
 One of the main sources of **waisting** worker's processing time is **slow clients** problem.
-When webservice receives request from client with a **slow** internet connection,  
-free worker start receiving that request. 
+When webservice receives request from client with a **slow** internet connection, free worker start receiving that request. 
 The worker will be bottlenecked by the speed of the client connection, 
 and it will be blocked **until** the slow client finishes sending large ID image.
 Being blocked means that this worker process can not handle any other request in the meantime, 
