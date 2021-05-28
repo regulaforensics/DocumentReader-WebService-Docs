@@ -4,13 +4,13 @@
 
 The software is available to download using [Regula Downloads Manager](https://support.regulaforensics.com/hc/en-us/articles/115004219343-Regula-Downloads-Manager).
 
-![](https://img.regulaforensics.com/Web/down-man.png)
+![](../.gitbook/assets/web-api-5.5.png)
 
 {% hint style="info" %}
 Document Reader Web API is supported on`(x86) and (x64)`architectures.
 {% endhint %}
 
-1. Select the Document Reader Web API checkbox and click "Download And Run" button.
+1. Select the Document Reader Web API checkbox and click the "Download And Run" button.
 2. Follow the Installation Wizard instructions. The Installation Wizard will set up all required prerequisites, register and automatically start the service.
 
 ## Set up the license
@@ -41,15 +41,13 @@ To obtaining the production license or other purchasing information, please [**s
 
 ![](https://img.regulaforensics.com/Web/restart.png)
 
-### \*\*\*\*
-
-### Set up license **using Regula Licensing app**
+### Set up license **using Regula Licensing application**
 
 {% hint style="info" %}
-Regula Licensing app is available for download via [Regula Downloads Manager](https://support.regulaforensics.com/hc/en-us/articles/115004219343-Regula-Downloads-Manager) at "Other Products" Tab
+Regula Licensing app is available for download via [Regula Downloads Manager](https://support.regulaforensics.com/hc/en-us/articles/115004219343-Regula-Downloads-Manager) at the "Other Products" Tab
 {% endhint %}
 
-1. Launch the Regula Licensing app.
+1. Launch the Regula Licensing application.
 2. Click the “Install license” button and select the license file _regula.license_ or drag and drop the license file into the application window.
 
 ![](https://img.regulaforensics.com/Web/button.png)
