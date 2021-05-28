@@ -13,7 +13,10 @@ Also, you can use **N** webserver instances with **multiple** workers under load
 
 {% hint style="warning" %}
 **Each worker** in our license model counts as **instance**. 
-Thus, setup - 3 machines with 2 workers on each - **requires** a license with 6 instances.   
+Thus, setup - 3 machines with 2 workers on each - **requires** a license with 6 instances. 
+
+For **transaction-based** licenses number of workers is not limited,
+only amount of **process requests**  counts.
 {% endhint %}
 
 ## Prerequisites
