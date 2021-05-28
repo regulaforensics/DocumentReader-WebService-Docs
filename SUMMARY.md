@@ -4,7 +4,7 @@
 
 ## Installation
 
-* [General Concerns](installation/requirements.md)
+* [General Concerns](installation/general.md)
 * [Platforms](installation/platforms/README.md)
   * [Docker](installation/platforms/docker.md)
   * [Linux](installation/platforms/linux.md)

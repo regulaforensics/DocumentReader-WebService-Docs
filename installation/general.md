@@ -1,7 +1,5 @@
 # General Concerns
 
-
-
 ## Prerequisites
 
 * Recommended machine settings: 1CPU / 2Gb per worker
@@ -18,6 +16,6 @@ The Version `A.B.C.D` is composed of:
 An example of version **5.2.103350.2** can be interpreted as:
 
 * the Regula SDK version is `5.2`
-* the current documents database version is `103350`
+* the current document database version is `103350`
 * the service wrapper version is `2`
 
