@@ -8,7 +8,7 @@ So if you submit many requests at once they will queue up and will be processed 
 
 For improved throughput performance you need to launch more workers according to the planned load.
 Webservice can spawn **multiple** workers under **one** service instance.
-You may set workers number based on the [hardware limitation](#Prerequisites) you have.
+You may set workers number based on the [hardware limitation](#prerequisites) you have.
 Also, you can use **N** webserver instances with **multiple** workers under loadbalancer to increase performance even father.
 
 {% hint style="warning" %}
