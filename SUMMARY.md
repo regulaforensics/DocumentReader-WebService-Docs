@@ -4,13 +4,16 @@
 
 ## Installation
 
-* [General Concerns](installation/general.md)
+* [Getting Started](installation/general.md)
 * [Platforms](installation/platforms/README.md)
   * [Docker](installation/platforms/docker.md)
   * [Linux](installation/platforms/linux.md)
   * [Windows](installation/platforms/windows.md)
 * [Settings](installation/custom-settings.md)
 * [Deployment](installation/deployment.md)
+
+## Usage
+* [Getting Started](usage/general.md)
 
 ## Integration
 

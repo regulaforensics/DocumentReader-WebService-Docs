@@ -1,4 +1,4 @@
-# General Concerns
+# Getting Started
 
 ## Worker model
 
