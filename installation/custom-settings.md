@@ -1,41 +1,30 @@
 # Settings
 
-
-
 ### **Logging**
 
-There are 3 log types in our service: access logs, app logs, and process logs.
+There are **3** log types in our service: 
+1. access logs - are just standard **HTTP** access logs.
+2. application logs  - regular application logs, including errors and debug messages.
+3. document process results logs - stores document processing **input** and **results** in JSON format. 
+   **Space-consuming** option, up to a few tens of Mb per request. **Disabled** by default.
 
-**Access logs** _-_ are just standard HTTP access logs. 
+| Option          | Default              | Description         |
+| --------------- | -------------------- | ------------------- |
+| **DOCREADER_LOGS_ACCESS_CONSOLE** | "false"  | Controls whether to print access logs to a console.  |
+| **DOCREADER_LOGS_ACCESS_FILE**    | "false"  | Controls whether to save access logs to a file.  |
+| **DOCREADER_LOGS_ACCESS_FILE_PATH**  | "logs/access/document-reader-access.log"  | Specifies a file to save access logs if **DOCREADER_LOGS_ACCESS_FILE** enabled.  |
+| | | |
+| **DOCREADER_LOGS_APP_CONSOLE** | "true"  | Controls whether to print application logs to a console. |
+| **DOCREADER_LOGS_APP_FILE** | "false" on Docker **\/** "true" on other installations  | Controls whether to save application logs to a file.  |
+| **DOCREADER_LOGS_APP_FILE_PATH**    | "logs/app/document-reader-app.log"  | Specifies a file to save access logs if **DOCREADER_LOGS_APP_FILE** enabled.  
+| | | |
+| **DOCREADER_PROCESS_RESULTS_LOG_PATH** | "logs/process"  | Specifies a folder to save document process results. Final output is a **zip** file, located in **yyyy/mm/dd/hh** folder under specified in this property root path.  |
+| | | |
+| **DOCREADER_LOGS_FORMATTER** | "text"  | Possible values: **"text"** / **"json"**. Some log collectors require logs to be printed in json format.  |
 
-```text
-DOCREADER_LOGS_ACCESS_CONSOLE="false"
-DOCREADER_LOGS_ACCESS_FILE="false"
-DOCREADER_LOGS_ACCESS_FILE_PATH='logs/access/document-reader-access.log'
-```
-
-**App logs** _-_ all other application logs. Error logs are printed under the **error** log level. 
-
-```text
-DOCREADER_LOGS_APP_CONSOLE="true"
-DOCREADER_LOGS_APP_FILE="true"
-DOCREADER_LOGS_APP_FILE_PATH='logs/app/document-reader-app.log'
-```
-
-**Process logs** _-_ store document processing input and results in JSON format. Space-consuming option, up to a few tens of Mb per request. Disabled by default.
-
-```text
-DOCREADER_PROCESS_RESULTS_LOG_PATH="logs/process"
-```
-
-**Logs format**
-
-```text
-DOCREADER_LOGS_FORMATTER="text"
-# or DOCREADER_LOGS_FORMATTER="json"
-```
-
-The service writes console logs to stdout. Day-based file rotation occurs every midnight UTC. Service keeps the last 30 days of file logs.
+Access and applications logs are printed to **stdout**.
+For access and applications logs files **day-based** rotation occurs every **midnight UTC**. 
+Service **keeps** the last **30 days** of logs files.
 
 ### General
 
