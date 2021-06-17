@@ -1,0 +1,4 @@
+table tr td {
+    font-size: 5px;
+    padding: 4px;
+}
