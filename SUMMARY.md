@@ -18,7 +18,7 @@
 
 ## Integration
 
-* [OpenAPI Defenitions](https://github.com/regulaforensics/DocumentReader-web-openapi)
+* [OpenAPI Definitions](https://github.com/regulaforensics/DocumentReader-web-openapi)
 * [JavaScript Client](https://github.com/regulaforensics/DocumentReader-web-js-client/tree/master/example)
 * [Java Client](https://github.com/regulaforensics/DocumentReader-web-java-client/tree/master/example)
 * [Python Client](https://github.com/regulaforensics/DocumentReader-web-python-client/tree/master/example)
