@@ -10,7 +10,7 @@
   * [Linux](installation/platforms/linux.md)
   * [Windows](installation/platforms/windows.md)
 * [Settings](installation/custom-settings.md)
-* [Deployment](installation/deployment.md)
+* [Deployment](installation/deployment/general.md)
 
 ## Usage
 
