@@ -32,13 +32,13 @@ To obtain the license key, please follow the steps below:
 * Launch **Regula Licensing** application
 * Click “_Save System Info_”
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 * **.sysinfo file** will be automatically generated. Please send it to your Sales Manager for further actions or use ‘Send System Info’ to send the request directly to our Support Team specifying your contact details. Some comments on the use-case/project will be much appreciated.
 
 
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%286%29%20%281%29.png)
 
 *   Once you receive the license key, there are two ways how the license key can be implemented:  **using the Regula Licensing application or Manually.**
 

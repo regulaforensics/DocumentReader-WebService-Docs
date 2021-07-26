@@ -12,16 +12,73 @@ On some systems, files beginning with a dot are hidden by default. Thus, **.env*
 
 ## General
 
-| Option | Default | Description |
-| :--- | :--- | :--- |
-| **BIND** | 0.0.0.0:41101 | IpAddress:port server binding |
-| **WORKERS** | 1 | Number of workers to process requests |
-| **BACKLOG** | WORKERS x 15 | Maximum number of requests in a queue awaiting processing |
-| **TIMEOUT** | 30 | Number of seconds for worker to process request. Workers silent for more than this many seconds are killed and restarted. |
-| **ENABLE\_DEMO\_WEB\_APP** | "true" | Serve a demo web app under host **root** url \(ex. localhost:41101/ \) |
-| **ROUTING\_PREFIX** |  | Add a url prefix to all endpoints \(ex. localhost:41101/{prefix}/ \) |
-| **LIC\_URL** \[docker only\] |  | URL to regula.license file for further download, if the mount option is not available |
-| **HTTPS\_PROXY** |  | HTTP proxy, used to connect to license service. Do not specify protocol prefix in proxy URL. |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Option</th>
+      <th style="text-align:left">Default</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>BIND</b>
+      </td>
+      <td style="text-align:left">0.0.0.0:41101</td>
+      <td style="text-align:left">IpAddress:port server binding</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>WORKERS</b>
+      </td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">Number of workers to process requests</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>BACKLOG</b>
+      </td>
+      <td style="text-align:left">WORKERS x 15</td>
+      <td style="text-align:left">Maximum number of requests in a queue awaiting processing</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>TIMEOUT</b>
+      </td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">Number of seconds for worker to process request. Workers silent for more
+        than this many seconds are killed and restarted.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>ENABLE_DEMO_WEB_APP</b>
+      </td>
+      <td style="text-align:left">&quot;true&quot;</td>
+      <td style="text-align:left">Serve a demo web app under host <b>root</b> url (ex. localhost:41101/ )</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>ROUTING_PREFIX</b>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Add a url prefix to all endpoints (ex. localhost:41101/{prefix}/ )</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>LIC_URL</b> [docker only]</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">URL to regula.license file for further download, if the mount option is
+        not available</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>HTTPS_PROXY</b>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>HTTP proxy, used to connect to license service. Do not specify protocol
+          prefix in proxy URL.</p>
+        <p>Do not specify protocol prefix in proxy URL. Instead <code>HTTPS_PROXY=http(s)://host:port</code> use <code>HTTPS_PROXY=host:port</code>
+        </p>
+        <p>If you use your own TSL certs, place them in <code>/etc/ssl/certs</code> folder
+          in Linux and docker envs.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## HTTPS and CORS
 
