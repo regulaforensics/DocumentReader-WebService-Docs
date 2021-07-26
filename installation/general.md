@@ -28,6 +28,18 @@ In case the online license is instance/worker-based, **heartbeats** will be moni
 
 Heartbeats will **continue** and as soon as the License **becomes** valid again, the operation of the webservice will restore **automatically**. In case there is **no** Internet connection when the request is sent, the result will be **TIMEOUT**.
 
+### Connect to license service via HTTP proxy
+
+If you host our solution in an isolated private environment, you can specify HTTP **proxy** via `HTTPS_PROXY` env variable. Proxy will be used by webservice to connect to license service.
+
+{% hint style="warning" %}
+Do not specify protocol prefix in proxy URL. Instead `HTTPS_PROXY=http(s)://host:port` use `HTTPS_PROXY=host:port`
+{% endhint %}
+
+{% hint style="info" %}
+If you use your own TSL certs, place them in `/etc/ssl/certs` folder in Linux and docker envs.
+{% endhint %}
+
 ## Prerequisites
 
 Recommended machine settings: 1CPU and 2Gb RAM per worker.

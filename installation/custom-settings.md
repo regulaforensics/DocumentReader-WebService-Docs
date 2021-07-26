@@ -21,6 +21,7 @@ On some systems, files beginning with a dot are hidden by default. Thus, **.env*
 | **ENABLE\_DEMO\_WEB\_APP** | "true" | Serve a demo web app under host **root** url \(ex. localhost:41101/ \) |
 | **ROUTING\_PREFIX** |  | Add a url prefix to all endpoints \(ex. localhost:41101/{prefix}/ \) |
 | **LIC\_URL** \[docker only\] |  | URL to regula.license file for further download, if the mount option is not available |
+| **HTTPS\_PROXY** |  | HTTP proxy, used to connect to license service. Do not specify protocol prefix in proxy URL. |
 
 ## HTTPS and CORS
 
