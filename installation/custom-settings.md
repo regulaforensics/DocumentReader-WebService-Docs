@@ -24,7 +24,7 @@ On some systems, files beginning with a dot are hidden by default. Thus, **.env*
     <tr>
       <td style="text-align:left"><b>BIND</b>
       </td>
-      <td style="text-align:left">0.0.0.0:41101</td>
+      <td style="text-align:left">0.0.0.0:8080</td>
       <td style="text-align:left">IpAddress:port server binding</td>
     </tr>
     <tr>
