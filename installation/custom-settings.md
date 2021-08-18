@@ -50,13 +50,13 @@ On some systems, files beginning with a dot are hidden by default. Thus, **.env*
       <td style="text-align:left"><b>ENABLE_DEMO_WEB_APP</b>
       </td>
       <td style="text-align:left">&quot;true&quot;</td>
-      <td style="text-align:left">Serve a demo web app under host <b>root</b> url (ex. localhost:41101/ )</td>
+      <td style="text-align:left">Serve a demo web app under host <b>root</b> url (ex. localhost:8080/ )</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>ROUTING_PREFIX</b>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Add a url prefix to all endpoints (ex. localhost:41101/{prefix}/ )</td>
+      <td style="text-align:left">Add a url prefix to all endpoints (ex. localhost:8080/{prefix}/ )</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>LIC_URL</b> [docker only]</td>
